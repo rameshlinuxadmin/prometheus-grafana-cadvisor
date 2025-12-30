@@ -42,7 +42,7 @@ Expected output shows three running services: cadvisor, prometheus, grafana.
 1. Access Grafana at `http://your-server-ip:3000`.
 2. Log in with default credentials (admin/admin).
 3. Navigate to **Dashboards** → **Import**.
-4. Upload your dashboard JSON file or paste its contents.
+4. Upload added dashboard JSON file.
 5. Select **Prometheus** as the data source.
 6. Click **Import**.
 
@@ -50,3 +50,4 @@ Expected output shows three running services: cadvisor, prometheus, grafana.
 - Check logs: `docker-compose logs -f`.
 - Restart: `docker-compose down && docker-compose up -d`.
 - Grafana datasource: Ensure URL is `http://<prometheus-IP>:9090`
+
