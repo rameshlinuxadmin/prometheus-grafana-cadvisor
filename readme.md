@@ -41,7 +41,10 @@ Grafana Login Dashboard
 ![Grafana Login](Images/grafana-login.png)  
 
 Initial Dashboard with present container details.
-![Grafana Dashboard](Images/grafana-dashboard.png)
+![Grafana Dashboard](Images/Grafana-dashboard-before.png)
+
+Dashboard after replicating 5 webserver container.
+![Grafana Dashboard](Images/Grafana-dashboard-after.png)
 
 ## Importing Dashboard JSON
 1. Access Grafana at `http://your-server-ip:3000`.
@@ -55,5 +58,6 @@ Initial Dashboard with present container details.
 - Check logs: `docker-compose logs -f`.
 - Restart: `docker-compose down && docker-compose up -d`.
 - Grafana datasource: Ensure URL is `http://<prometheus-IP>:9090`
+
 
 
