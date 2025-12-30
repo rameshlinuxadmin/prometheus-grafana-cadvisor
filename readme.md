@@ -34,8 +34,13 @@ Expected output shows three running services: cadvisor, prometheus, grafana.
 - Grafana: [http://your-server-ip:3000](http://your-server-ip:3000) (admin/admin; add Prometheus datasource at http://prometheus:9090).
 
 ## Screenshots
+Running container output in Docker
 ![Docker PS Output](Images/docker-ps.png)  
+
+Grafana Login Dashboard
 ![Grafana Login](Images/grafana-login.png)  
+
+Initial Dashboard with present container details.
 ![Grafana Dashboard](Images/grafana-dashboard.png)
 
 ## Importing Dashboard JSON
@@ -50,4 +55,5 @@ Expected output shows three running services: cadvisor, prometheus, grafana.
 - Check logs: `docker-compose logs -f`.
 - Restart: `docker-compose down && docker-compose up -d`.
 - Grafana datasource: Ensure URL is `http://<prometheus-IP>:9090`
+
 
